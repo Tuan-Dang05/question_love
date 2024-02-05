@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        body{
+            background-color: rgb(226, 225, 225);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 200px;
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto;
+            margin-top: 15%;
+        }
+        .ques{
+            text-align: center;
+            font-size: 2em;
+            background: -webkit-linear-gradient(#ff4b4b, #24174e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .aaa{
+            display: inline-flex;
+            position: absolute;
+            left: 50%;
+            margin-top: 2em;
+            transform: translate(-50%, 0);
+        }
+       
+        #yes{
+            border: 1px solid black;
+            padding: 5px 20px;
+            background-color:green;
+            color: white;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        #no{
+            border: 1px solid black;
+            padding: 5px 10px;
+            background-color: red;
+            color: white;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+    <body>
+        <div class="cover">
+            <img src="./duck.gif" alt="cat_gif"/>
+            <div class="ques">Bạn có iu mình hông z?</div>
+            <div class="aaa">
+           <div class="btnYes">
+            <button type="submit" id="yes" onclick="handleButtonYes()" value="Có">Có</button>
+           </div>
+           <div class="btnNo">
+           <button type="button" id="no" value="Không" onclick="handleButtonNo()">Không</button>
+           </div>
+           </div>
+        </div>
+    </body>
+    <script src="./app.js"></script>
+
+</html>
